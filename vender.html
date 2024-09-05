@@ -49,7 +49,9 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#response">Vender Response</a>
+                  <a class="dropdown-item" href="#response"
+                    >Supplier Response</a
+                  >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
@@ -88,12 +90,12 @@
           <table class="table table-bordered border-primary">
             <tr>
               <th>Product Title</th>
-              <th>Date</th>
-              <th>Product Pacakage</th>
+              <th>Current Date</th>
+              <th>Product Pacakage/Part Number</th>
               <th>Quantity</th>
               <th>Phone</th>
               <th>Email</th>
-              <th>Address</th>
+              <th>Company Address</th>
             </tr>
             <tr>
               <td></td>
@@ -147,22 +149,23 @@
     <div id="response">
       <div class="container mt-3 mb-3">
         <div class="row">
-          <h4 class="text-center">Vender Response and Payment Conditions</h4>
+          <h4 class="text-center">Supplier Response and Payment Conditions</h4>
           <div class="col">
             <label for="exampleFormControlInput1" class="form-label"
               >Product Title</label
             >
-            <input
-              type="text"
-              id="producttitle"
-              class="form-control"
-              aria-label="First name"
-              required
-            />
+            <select class="form-select" aria-label="Default select example">
+              <option selected>4G Only Module</option>
+              <option value="1">2.4" TFT Screen</option>
+              <option value="2">Wi-Fi</option>
+              <option value="3">2000mAh Battery</option>
+              <option value="3">Type C Charger</option>
+              <option value="3">USB to Type C Cable</option>
+            </select>
           </div>
           <div class="col">
             <label for="exampleFormControlInput1" class="form-label"
-              >Product Price</label
+              >Product Unit Price</label
             >
             <input
               type="text"
@@ -182,21 +185,44 @@
               type="number"
               id="productdetails"
               class="form-control"
-              placeholder="100"
+              placeholder="1"
               aria-label="First name"
               required
             />
           </div>
           <div class="col">
             <label for="exampleFormControlInput1" class="form-label"
-              >Payment Conditions In Days</label
+              >Courier Charges</label
+            ><input
+              type="text"
+              id="phone"
+              class="form-control"
+              aria-label="phone"
+              placeholder=""
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="exampleFormControlInput1" class="form-label"
+              >GST Rate</label
+            >
+            <select class="form-select" aria-label="Default select example">
+              <option value="1">IGST 28%</option>
+              <option value="2">CGST 18%</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Total Amount/Courier Charges/with GST</label
             >
             <input
-              type="number"
-              id="quantity"
+              type="text"
+              id="email"
               class="form-control"
-              placeholder="7"
-              aria-label="Last name"
+              aria-label="email"
+              placeholder=""
               required
             />
           </div>
@@ -229,6 +255,7 @@
             />
           </div>
         </div>
+
         <div class="row">
           <div class="col">
             <label for="exampleFormControlInput1" class="form-label"
@@ -260,7 +287,20 @@
         <div class="row">
           <div class="col">
             <label for="exampleFormControlInput1" class="form-label"
-              >Vender Address</label
+              >Supplier Payment & Terms Condition</label
+            >
+            <input
+              type="text"
+              id="phone"
+              class="form-control"
+              aria-label="phone"
+              placeholder=""
+              required
+            />
+          </div>
+          <div class="col">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Supplier Address</label
             >
             <input
               type="text"
