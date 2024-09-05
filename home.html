@@ -45,7 +45,7 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#order">New Orders</a>
+                  <a class="dropdown-item" href="#order">New Order</a>
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
@@ -63,7 +63,7 @@
                 role="button"
                 aria-expanded="false"
               >
-                Quotations and Payment Conditions
+                Supplier Quotation/Payment Conditions
               </a>
             </li>
           </ul>
@@ -122,36 +122,37 @@
       <div class="container mt-3">
         <form onsubmit="Form(event)">
           <div class="row">
-            <h2 class="text-center">New Product Orders</h2>
+            <h2 class="text-center">Request Product Orders</h2>
             <div class="col">
               <label for="exampleFormControlInput1" class="form-label"
                 >Product Title</label
               >
-              <input
-                type="text"
-                id="producttitle"
-                class="form-control"
-                aria-label="First name"
-                 
-              />
+              <select class="form-select" aria-label="Default select example">
+                <option selected>4G Only Module</option>
+                <option value="1">2.4" TFT Screen</option>
+                <option value="2">Wi-Fi</option>
+                <option value="3">2000mAh Battery</option>
+                <option value="3">Type C Charger</option>
+                <option value="3">USB to Type C Cable</option>
+              </select>
             </div>
             <div class="col">
               <label for="exampleFormControlInput1" class="form-label"
-                >Select Date</label
+                >Current Date</label
               >
               <input
                 type="date"
                 id="selectdate"
                 class="form-control"
                 aria-label="dateInput"
-                
+                 
               />
             </div>
           </div>
           <div class="row">
             <div class="col">
               <label for="exampleFormControlInput1" class="form-label"
-                >Pacakage Details</label
+                >Pacakage Details & Part Number</label
               >
               <input
                 type="text"
@@ -170,14 +171,14 @@
                 id="quantity"
                 class="form-control"
                 aria-label="Last name"
-                 
+             
               />
             </div>
           </div>
           <div class="row">
             <div class="col">
               <label for="exampleFormControlInput1" class="form-label"
-                >Phone</label
+                >Company Phone Number</label
               >
               <input
                 type="text"
@@ -185,12 +186,12 @@
                 class="form-control"
                 aria-label="phone"
                 placeholder="+91-1111111111"
-                 
+              
               />
             </div>
             <div class="col">
               <label for="exampleFormControlInput1" class="form-label"
-                >Email</label
+                >Company Email</label
               >
               <input
                 type="tel"
@@ -198,20 +199,20 @@
                 class="form-control"
                 aria-label="email"
                 placeholder="example@gmail.com"
-                
+                 
               />
             </div>
           </div>
           <div class="col mt-3">
             <label for="exampleFormControlInput1" class="form-label"
-              >Address</label
+              >Company Delevery Address</label
             >
             <input
               type="text"
               id="address"
               class="form-control"
               aria-label="First name"
-               
+              
             />
           </input>
 
@@ -223,109 +224,6 @@
             Submit
           </button>
         </form>
-      </div>
-    </div>
-    <div id="payment">
-      <div class="container">
-        <div class="row">
-          <h4 class="text-center">Vender Payment Conditions</h4>
-          <div class="table-responsive">
-            <table class="table table-bordered border-primary">
-              <thead>
-                <tr>
-                  <th>SN</th>
-                  <th>Date</th>
-                  <th>Vender Name</th>
-                  <th>Product Title</th>
-                  <th>Product Price</th>
-                  <th>Quantity</th>
-                  <th>Payment conditions in Days</th>
-                  <th>Delevery in Days</th>
-                  <th>Advance</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
       </div>
     </div>
     <script>
